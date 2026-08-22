@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuan-Shen Chiu</title>
+<style>
+  :root{
+    --ink:#1c1f26;
+    --sub:#5a6270;
+    --line:#e3e2dc;
+    --bg:#fbfaf7;
+    --accent:#2d4f4a;
+    --accent-soft:#e9f0ee;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:64px 24px 100px;
+  }
+  header{
+    margin-bottom:48px;
+    display:flex;
+    align-items:center;
+    gap:24px;
+  }
+  .avatar{
+    width:104px;
+    height:104px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+    background:var(--accent-soft);
+    border:1px solid var(--line);
+  }
+  .header-text{ min-width:0; }
+  h1{
+    font-size:2.1rem;
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    color:var(--sub);
+    font-size:1.02rem;
+    margin:0 0 18px;
+  }
+  .links{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:0.92rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .links a{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  .links a:hover, .links a:focus-visible{
+    border-bottom-color:var(--accent);
+  }
+  section{
+    margin-bottom:40px;
+  }
+  h2{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:0.78rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 14px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+  }
+  p{
+    margin:0 0 12px;
+    color:var(--ink);
+  }
+  .muted{ color:var(--sub); }
+  ul.pub-list, ul.plain{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  ul.pub-list li{
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+  }
+  ul.pub-list li:last-child{ border-bottom:none; }
+  .pub-title{
+    font-weight:600;
+    display:block;
+    margin-bottom:4px;
+  }
+  .pub-meta{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:0.85rem;
+    color:var(--sub);
+  }
+  .pub-links a{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:0.82rem;
+    color:var(--accent);
+    margin-right:12px;
+    text-decoration:none;
+  }
+  .pub-links a:hover{ text-decoration:underline; }
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tags span{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:0.8rem;
+    background:var(--accent-soft);
+    color:var(--accent);
+    padding:5px 12px;
+    border-radius:999px;
+  }
+  ul.plain li{
+    padding:6px 0;
+  }
+  footer{
+    margin-top:64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:0.8rem;
+    color:var(--sub);
+  }
+  @media (max-width:600px){
+    .wrap{padding:40px 18px 70px;}
+    h1{font-size:1.7rem;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- Replace "photo.jpg" with your image filename. Upload the photo to the
+         same GitHub repo as this index.html, in the same folder, so the path
+         below matches. Square images (e.g. 400x400px) work best. -->
+    <img class="avatar" src="photo.jpg" alt="Photo of Kuan-Shen Chiu">
+    <div class="header-text">
+      <h1>Kuan-Shen Chiu 邱冠伸</h1>
+      <p class="role">MS Student, Department of Computer Science &amp; Information Engineering<br>
+      National Taiwan University</p>
+      <nav class="links">
+        <a href="mailto:kuanshen77@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/kuan-shen-chiu-1b8035279/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Kuanshen77" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I'm a Master's student in the Department of Computer Science &amp; Information
+      Engineering at National Taiwan University (2023–present). My research interest
+      is diffusion models. Before NTU, I studied Electronics and Electrical
+      Engineering at National Yang Ming Chiao Tung University (2019–2023).
+    </p>
+    <div class="tags">
+      <span>Generative Models</span>
+      <span>Diffusion Models</span>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="plain">
+      <li><strong>M.S., Computer Science &amp; Information Engineering</strong> — National Taiwan University <span class="muted">(2023 – Present)</span></li>
+      <li><strong>B.S., Electronics and Electrical Engineering</strong> — National Yang Ming Chiao Tung University <span class="muted">(2019 – 2023)</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    Last updated August 2026 &middot; Built with a plain HTML template
+  </footer>
+
+</div>
+</body>
+</html>
